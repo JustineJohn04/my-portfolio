@@ -8,7 +8,7 @@ function Contact() {
         </div>
 
         <p>Thank you for reaching this part.</p>
-
+        <p>Portoflio currently underdevelopment</p>
         <div className="contact-links">
           <a
             href="https://www.linkedin.com/in/justine-john-montalbo-6ab6a42a8/"
@@ -16,7 +16,7 @@ function Contact() {
             rel="noopener noreferrer"
           >
             LinkedIn
-          </a>  
+          </a>
           <a href="mailto:justinejohnmontalbo478@email.com">Email</a>
           <a href="public/resume.pdf" target="_blank" rel="noopener noreferrer">
             Resume
