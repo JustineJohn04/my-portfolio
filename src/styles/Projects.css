@@ -1,0 +1,71 @@
+/*Project Number 1*/
+.projects {
+  padding: 5rem 10%;
+}
+.projects h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  padding: 2rem;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.03);
+  margin-bottom: 4rem;
+}
+
+.projects img {
+  border-radius: 50px;
+
+  width: 220px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.mobile-images {
+  display: flex;
+  gap: 1rem;
+}
+
+.mobile-images img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.project-info-1 {
+  flex: 1;
+}
+
+.project-info-1 p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/*Project Number 2*/
+
+.project-info-2 {
+  flex: 1;
+}
+
+.project-info-2 p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/*Project Number 3*/
+
+.project-info-3 {
+  flex: 1;
+}
+
+.project-info-3 p {
+  text-align: justify;
+  line-height: 1.8;
+}
