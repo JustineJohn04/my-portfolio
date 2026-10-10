@@ -18,7 +18,7 @@ function Contact() {
             LinkedIn
           </a>
           <a href="mailto:justinejohnmontalbo478@email.com">Email</a>
-          <a href="public/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
         </div>
