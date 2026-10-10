@@ -25,7 +25,7 @@ function Contact() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2026 JJ</p>
+        <p>© 2026</p>
       </div>
     </footer>
   );
