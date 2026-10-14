@@ -13,17 +13,13 @@ function HeroSection() {
       </div>
 
       <div className="hero-buttons">
-        <button className="primary-btn">
-          <a className="btn-1" href="#projects">
-            View Projects
-          </a>
-        </button>
+        <a className="primary-btn" href="#projects">
+          View Projects
+        </a>
 
-        <button className="secondary-btn">
-          <a className="btn-2" href="#contact">
-            Contact
-          </a>
-        </button>
+        <a className="secondary-btn" href="#contact">
+          Contact
+        </a>
       </div>
     </section>
   );
