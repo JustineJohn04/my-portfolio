@@ -15,25 +15,32 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
-
   background-color: #1f1f1f;
   color: white;
-
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  width: 100%;
+  padding: 0.5rem 2rem;
+  gap: 1rem;
+
+  background-color: #1f1f1f;
+  color: white;
+  box-sizing: border-box;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0;
 }
 
 .nav-links {
   display: flex;
   gap: 2rem;
-
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -52,6 +59,7 @@ body {
 }
 
 .nav-links a {
+  display: block;
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -64,8 +72,75 @@ body {
 /*My Logo*/
 
 .logo img {
-  border-radius: 50px;
-  background: white;
+  display: block;
   width: 40px;
-  height: auto;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+}
+
+/*Menu Toggle*/
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/*Tablet and smaller screens*/
+
+@media (max-width: 786px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+/*Mobile Menu*/
+
+@media (max-width: 600px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 1002;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    padding: 0.5rem 1rem;
+    background-color: #1f1f1f;
+    border-top: 1px solid #383838;
+  }
+
+  .nav-links.nav-links-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.85rem 0.5rem;
+    color: white;
+  }
 }

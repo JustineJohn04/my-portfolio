@@ -53,6 +53,8 @@
 
 body {
   margin: 0;
+  min-width: 320px;
+  width: 100%;
 }
 
 /*Changed the constrained layout*/
@@ -64,6 +66,11 @@ body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -113,4 +120,27 @@ code {
 
 html {
   scroll-behavior: smooth;
+}
+/*Tablet and smaller devices*/
+
+@media (max-width: 768px) {
+  section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+  section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
 }
