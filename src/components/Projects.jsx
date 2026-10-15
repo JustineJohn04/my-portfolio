@@ -11,64 +11,61 @@ import desktop2 from "../assets-2/Desktop5.png";
 function Projects() {
   return (
     <section id="projects" className="projects">
-      <div>
-        <h2>Projects</h2>
-      </div>
+      <h2>Projects</h2>
 
+      {/* Project 1: Mobile application */}
       <div className="project-container">
-        <div className="mobile-images">
-          <img src={notesIn1} alt="notesIn1" />
-          <img src={notesIn2} alt="notesIn2" />
+        <div className="project-media mobile-images">
+          <img src={notesIn1} alt="Notes In mobile app screen 1" />
+          <img src={notesIn2} alt="Notes In mobile app screen 2" />
         </div>
 
-        <div className="project-info-1">
-          <div>
-            <h3>Notes In.</h3>
-          </div>
+        <div className="project-info project-info-1">
+          <h3>Notes In.</h3>
           <p>
-            To-do list, checklist, ideas and dumps etc. Notes In is a
-            personalize digital notebook writing your ideas made easy. It
-            started as an idea, i wanted to create a digital writing platform
-            that gives personality to user.
+            To-do list, checklist, ideas and dumps, etc. Notes In is a
+            personalized digital notebook that makes writing down ideas easy. It
+            started as an idea: I wanted to create a digital writing platform
+            that gives personality to the user.
           </p>
         </div>
       </div>
 
-      <div className="project-container">
-        <div>
-          <img src={logo1} alt="logo1" />
-          <img src={logo2} alt="logo2" />
-        </div>
-        <div className="project-info-2">
-          <div>
-            <h3>mARian Logo</h3>
-          </div>
+      {/*Project 2: Logo Design*/}
 
+      <div className="project-container">
+        <div className="project-media logo-images">
+          <img src={logo1} alt="mARian logo design concept 1" />
+          <img src={logo2} alt="mARian logo design concept 2" />
+        </div>
+        <div className="project-info project-info-2">
+          <h3>mARian Logo</h3>
           <p>
-            A project that is developed an for Saint Mary's University (SMU) to
-            improve how directory information is disseminated and to enhance
-            promotional activities. Traditional signage and promotional
-            techniques at SMU were outdated, faded, or inaccurate due to
-            frequent office relocations, leading to disorientation among
-            students and staff.
+            A project developed for Saint Mary's University (SMU) to improve how
+            directory information is shared and to enhance promotional
+            activities. Traditional signage and promotional materials had become
+            outdated, faded, or inaccurate due to frequent office relocations,
+            causing confusion among students and staff.
           </p>
         </div>
       </div>
 
+      {/*Project 3: Website Design Screen*/}
       <div className="project-container">
-        <div>
-          <img src={desktop1} alt="desktop1" />
-          <img src={desktop2} alt="desktop2" />
+        <div className="project-media logo-images">
+          <img src={desktop1} alt="Solea jewelry website design screen 1" />
+          <img src={desktop2} alt="Solea jewelry website design screen 2" />
         </div>
-        <div className="project-info-3">
+
+        <div className="project-info project-info-3">
           <h3>Web Design</h3>
           <p>
-            Solea is a modern, modular find jewelry brand designed to empower
-            individuals to express themselves freely. its products are verstile
-            allowing customers to transform a single piece into multiple styles.
-            the goal of this design is to create a responsive homepage and
-            modern UI/UX experience that reflects the brands sophistication,
-            creativity and transformative nature.
+            Solea is a modern, modular fine jewelry brand designed to empower
+            individuals to express themselves freely. Its products are
+            versatile, allowing customers to transform a single piece into
+            multiple styles. The goal of this design is to create a responsive
+            homepage and modern UI/UX experience that reflects the brand's
+            sophistication, creativity, and transformative nature.
           </p>
         </div>
       </div>
